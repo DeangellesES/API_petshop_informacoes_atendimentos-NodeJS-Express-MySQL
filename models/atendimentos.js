@@ -7,7 +7,7 @@ class Atendimento {
     constructor() {
         this.dataEhValida = ({ data, dataCriacao }) =>
             moment(data).isSameOrAfter(dataCriacao)
-        this.clienteEhValido = tamanho => tamanho >= 5
+        this.clienteEhValido = ({tamanho}) => tamanho >= 5
 
         this.valida = parametros =>
             this.validacoes.filter(campo => {
