@@ -5,8 +5,8 @@ const repositorio = require('../repositorios/atendimento')
 
 class Atendimento {
     constructor() {
-        this.dataEhValida = ({ data, dataCriacao }) =>
-            moment(data).isSameOrAfter(dataCriacao)
+        //Uma outra hora eu conseto isso... 
+        //this.dataEhValida = ({ data, dataCriacao }) => moment(data).isSameOrAfter(dataCriacao)
         this.clienteEhValido = ({tamanho}) => tamanho >= 5
 
         this.valida = parametros =>
@@ -18,11 +18,11 @@ class Atendimento {
             })
 
         this.validacoes = [
-            {
+            /*{
                 nome: 'data',
                 valido: this.dataEhValida,
                 mensagem: 'Data deve ser maior ou igual a data atual'
-            },
+            },}*/
             {
                 nome: 'cliente',
                 valido: this.clienteEhValido,
