@@ -5,7 +5,7 @@ const repositorio = require('../repositorios/atendimento')
 
 class Atendimento {
     constructor() {
-        //Uma outra hora eu conseto isso... 
+        //Uma outra hora eu conserto isso... 
         //this.dataEhValida = ({ data, dataCriacao }) => moment(data).isSameOrAfter(dataCriacao)
         this.clienteEhValido = ({tamanho}) => tamanho >= 5
 
